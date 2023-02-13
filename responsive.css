@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #2A83FD;
+  padding: 200px;
+}
+
+@media (min-width: 768px) {    /*with respect to dff screen size, different bg color */
+  body{
+  background-color: #ECD662;
+}
+}
+
+@media (min-width: 1028px) {
+  body {
+  background-color: #9D23CD ;
+   }
+ }
+
+@media (min-width: 1280px) {
+  body {
+  background-color: #AC67B3;
+}
+}
+
+.parent {
+  background-color: #fff;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  /*justify-content: flex-end;*/
+  align-items: center; /*justify content aligns as a group
+  and align-items align as individual items*/
+  justify-content: center; /*elements in parent as a whole will align at center*/
+  flex-direction: column;
+}
+
+.child {
+  background-color: #D9DD6B;
+  width: 200px;
+  height: 200px;
+}
+
+.child2 {
+  background-color: #000;
+  width: 200px;
+  height: 200px;
+}
